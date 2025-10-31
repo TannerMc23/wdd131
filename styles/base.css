@@ -85,14 +85,14 @@ section img{
 }
 
 section h2{
-    color: white;
+    color: black;
     margin-bottom: 0.5rem;
     text-align: center;
     font-size: 1.25rem;
     font-weight: bold;
     padding: 0.5rem;
-    border-radius: 8px;
-    background-color: navy;
+    background-color: lightskyblue;
+    border-bottom: 1px solid black;
 }
 
 #card1{
