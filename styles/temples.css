@@ -8,12 +8,12 @@ body{
     font-family: 'roboto', sans-serif;
     line-height: 1.5;
     background-color: #f8fafc;
-    color: #333;
+    color: #333333;
 }
 
 header{
     background-color: #2b6cb0;
-    color: white;
+    color: #f8fafc;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -27,7 +27,7 @@ header h2{
 #menu{
     background: none;
     border: none;
-    color: white;
+    color: #f8fafc;
     font-size: 2rem;
     cursor: pointer;
 }
@@ -50,7 +50,7 @@ nav{
 .navigation li a{
     display: block;
     padding: 0.75rem;
-    color: white;
+    color: #f8fafc;
     text-decoration: none;
     text-align: center;
 }
@@ -76,7 +76,7 @@ main{
 }
 
 figure{
-    background: white;
+    background: #f8fafc;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
