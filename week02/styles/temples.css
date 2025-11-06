@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'roboto', sans-serif;
+    line-height: 1.5;
+    background-color: #f8fafc;
+    color: #333;
+}
+
+header{
+    background-color: #2b6cb0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header h2{
+    font-size: 1.5rem;
+}
+
+#menu{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+nav{
+    display: none;
+}
+
+.navigation{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.navigation.show {
+    display: block;
+    background-color: #2b6cb0;
+}
+
+.navigation li a{
+    display: block;
+    padding: 0.75rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navigation li a:hover{
+    background-color: #1a4f8a;
+}
+
+.show nav{
+    display: block;
+    width: 100%;
+}
+
+main{
+    padding: 1rem;
+    text-align: center;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+figure{
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+figure img{
+    width: 100%;
+    height: auto;
+}
+
+figcaption{
+    padding: 0.5rem;
+    background-color: #edf2f7;
+}
+
+footer{
+    background-color: #2b6cb0;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
