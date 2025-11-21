@@ -33,7 +33,7 @@ header h2{
 }
 
 nav{
-    display: none;
+    display: flex;
 }
 
 .navigation{
@@ -48,7 +48,7 @@ header.show .navigation {
 }
 
 ul{
-    display: flex;
+    display: none;
 }
 
 .navigation li a{
