@@ -1,0 +1,36 @@
+@media (min-width: 640px){
+    #menu{
+        display: none;
+    }
+
+    nav{
+        display: block;
+    }
+
+    header{
+        flex-direction: row;
+    }
+
+    .navigation{
+        display: flex;
+        gap: 1rem;
+        background: none;
+    }
+
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 1.5rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .navigation li a{
+        padding: 0.5rem 1rem;
+    }
+    
+    .navigation.show{
+        display: flex;
+    }
+}
