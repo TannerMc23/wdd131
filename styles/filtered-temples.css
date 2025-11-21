@@ -47,7 +47,7 @@ header.show .navigation {
     background-color: #2b6cb0;
 }
 
-li{
+ul{
     display: flex;
 }
 
