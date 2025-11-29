@@ -19,13 +19,13 @@
     <main>
         <form method="get" action="review.html" class="pr1">
             <fieldset>
-                <div>Product Name</div>
+                <div><strong>Product Name</strong></div>
                 <label>
                     <select name="productName" id="productName" required>
                         <option value="" disabled selected>Select a Product ...</option>
                     </select>
                 </label>
-                <div>Overall Rating</div>
+                <div><strong>Overall Rating</strong></div>
                 <div class="rating-group">
                     <div class="rating-option">
                         <label for="star1" class="stars">&star;</label>
@@ -48,21 +48,21 @@
                         <input type="radio" id="star5" name="rating" value="5" required>
                     </div>
                 </div>
-                <div>Date of Installation</div>
+                <label><strong>Date of Installation</strong></label>
                 <label><input type="date" name="completeDate" required></label>
 
-                <div>Which features did you find useful in the product?</div>
-                <div>(Check all that apply)</div>
+                <div><strong>Which features did you find useful in the product?</strong></div>
+                <div><strong>(Check all that apply)</strong></div>
                 <label><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label>
                 <label><input type="checkbox" id="easeOfUse" name="easeOfUse" value="yes"> Ease of Use</label>
                 <label><input type="checkbox" id="performance" name="performance" value="yes"> Performance</label>
                 <label><input type="checkbox" id="design" name="design" value="yes"> Design</label>
 
-                <div>Written Review (Optional)</div>
+                <label><strong>Written Review (Optional)</strong></label>
                 <textarea name="writtenReview" id="writtenReview" rows="6" cols="40"
                     placeholder="Write your review here (optional)"></textarea>
 
-                <div>Your Name (Optional)</div>
+                <label><strong>Your Name (Optional)</strong></label>
                 <label><input type="text" id="yourName" name="yourName"></label>
 
                 <div><label><input type="submit" value="Post Review"></label></div>

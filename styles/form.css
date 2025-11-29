@@ -68,7 +68,6 @@ textarea{
     transition: color 0.2s;
 }
 
-
 .rating-option input[type="radio"]:checked + .stars,
 .rating-option:hover .stars{
     color: gold;
