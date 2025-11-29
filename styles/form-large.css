@@ -1,0 +1,49 @@
+@media screen and (min-width: 768px){
+    main{
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0;
+    }
+
+    form.pr1{
+        width: 700px;
+        margin: 0 auto;
+    }
+
+    form.pr1 fieldset{
+        padding: 2.5rem;
+    }
+
+    header h1{
+        font-size: 2.6rem;
+    }
+
+    /* .rating-option{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    } */
+
+
+    .rating-option .stars{
+        font-size: 2rem;
+    }
+
+    /* label input[type="radio"]{
+        transform: scale(1.6);
+    } */
+
+    /* input[type="checkbox"]{
+        transform: scale(1.4);
+    } */
+
+    textarea{
+        height: 150px;
+    }
+
+    input[type="submit"]{
+        font-size: 1.3rem;
+    }
+}

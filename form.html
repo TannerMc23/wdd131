@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Product Review Form</title>
+    <meta name="description" content="WDD 131 | Product Review Form | Tanner McMillan">
+    <meta name="author" content="Tanner McMillan">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="pr1">
+            <fieldset>
+                <div>Product Name</div>
+                <label>
+                    <select name="productName" id="productName" required>
+                        <option value="" disabled selected>Select a Product ...</option>
+                    </select>
+                </label>
+                <div>Overall Rating</div>
+                <div class="rating-group">
+                    <div class="rating-option">
+                        <label for="star1" class="stars">&star;</label>
+                        <input type="radio" id="star1" name="rating" value="1" required>
+                    </div>
+                    <div class="rating-option">
+                        <label for="star2" class="stars">&star;&star;</label>
+                        <input type="radio" id="star2" name="rating" value="2" required>
+                    </div>
+                    <div class="rating-option">
+                        <label for="star3" class="stars">&star;&star;&star;</label>
+                        <input type="radio" id="star3" name="rating" value="3" required>
+                    </div>
+                    <div class="rating-option">
+                        <label for="star4" class="stars">&star;&star;&star;&star;</label>
+                        <input type="radio" id="star4" name="rating" value="4" required>
+                    </div>
+                    <div class="rating-option">
+                        <label for="star5" class="stars">&star;&star;&star;&star;&star;</label>
+                        <input type="radio" id="star5" name="rating" value="5" required>
+                    </div>
+                </div>
+                <div>Date of Installation</div>
+                <label><input type="date" name="completeDate" required></label>
+
+                <div>Which features did you find useful in the product?</div>
+                <div>(Check all that apply)</div>
+                <label><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label>
+                <label><input type="checkbox" id="easeOfUse" name="easeOfUse" value="yes"> Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="performance" value="yes"> Performance</label>
+                <label><input type="checkbox" id="design" name="design" value="yes"> Design</label>
+
+                <div>Written Review (Optional)</div>
+                <textarea name="writtenReview" id="writtenReview" rows="6" cols="40"
+                    placeholder="Write your review here (optional)"></textarea>
+
+                <div>Your Name (Optional)</div>
+                <label><input type="text" id="yourName" name="yourName"></label>
+
+                <div><label><input type="submit" value="Post Review"></label></div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>©️<span id="currentyear"></span>🥏Tanner McMillan🥏 Ogden, Utah</p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+
+</html>
