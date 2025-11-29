@@ -20,7 +20,7 @@
         <form method="get" action="review.html" class="pr1">
             <fieldset>
                 <div><strong>Product Name</strong></div>
-                <label>
+                <label for="productName">
                     <select name="productName" id="productName" required>
                         <option value="" disabled selected>Select a Product ...</option>
                     </select>
@@ -48,24 +48,42 @@
                         <input type="radio" id="star5" name="rating" value="5" required>
                     </div>
                 </div>
-                <label><strong>Date of Installation</strong></label>
-                <label><input type="date" name="completeDate" required></label>
+                <label for="completeDate"><strong>Date of Installation</strong></label>
+                <input type="date" name="completeDate" required>
 
                 <div><strong>Which features did you find useful in the product?</strong></div>
                 <div><strong>(Check all that apply)</strong></div>
-                <label><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label>
-                <label><input type="checkbox" id="easeOfUse" name="easeOfUse" value="yes"> Ease of Use</label>
-                <label><input type="checkbox" id="performance" name="performance" value="yes"> Performance</label>
-                <label><input type="checkbox" id="design" name="design" value="yes"> Design</label>
+                
+                <div>
+                <label for="durability"><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label>
+                </div>
 
-                <label><strong>Written Review (Optional)</strong></label>
+                <div>
+                <label for="easeOfUse"><input type="checkbox" id="easeOfUse" name="easeOfUse" value="yes"> Ease of Use</label>
+                </div>
+
+                <div>
+                <label for="performance"><input type="checkbox" id="performance" name="performance" value="yes"> Performance</label>
+                </div>
+
+                <div>
+                <label for="design"><input type="checkbox" id="design" name="design" value="yes"> Design</label>
+                </div>
+
+                <div>
+                <label for="writtenReview"><strong>Written Review (Optional)</strong></label>
                 <textarea name="writtenReview" id="writtenReview" rows="6" cols="40"
                     placeholder="Write your review here (optional)"></textarea>
+                </div>
 
-                <label><strong>Your Name (Optional)</strong></label>
-                <label><input type="text" id="yourName" name="yourName"></label>
+                <div>
+                <label for="yourName"><strong>Your Name (Optional)</strong></label>
+                <input type="text" id="yourName" name="yourName">
+                </div>
 
-                <div><label><input type="submit" value="Post Review"></label></div>
+                <div>
+                    <label><input type="submit" value="Post Review"></label>
+                </div>
             </fieldset>
         </form>
     </main>
