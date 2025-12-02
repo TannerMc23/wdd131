@@ -137,7 +137,7 @@ header {
     position: relative;
     height: 60vh;
     min-height: 350px;
-    background-image: url("/projects/images/hero4.webp");
+    background-image: url("/wdd131/projects/images/hero4.webp");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
