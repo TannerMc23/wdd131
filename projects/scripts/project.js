@@ -101,13 +101,14 @@ const glossaryTerms = [
 
 const glossaryContainer = document.getElementById("terminology-list");
 
-let savedStates = JSON.parse(localStorage.getItem("glossaryStates")) || {};
+if (glossaryContainer) {
+    let savedStates = JSON.parse(localStorage.getItem("glossaryStates")) || {};
 
-function renderGlossary() {
-    glossaryContainer.innerHTML = glossaryTerms
-        .map((item, index) => {
-            const isOpen = savedStates[index] === true;
-            return `
+    function renderGlossary() {
+        glossaryContainer.innerHTML = glossaryTerms
+            .map((item, index) => {
+                const isOpen = savedStates[index] === true;
+                return `
             <div class="terminology-item" data-index="${index}">
             <div class="term-title">
             ${item.term}
@@ -118,33 +119,34 @@ function renderGlossary() {
             </div>
         </div>
     `;
-        })
-        .join("");
-}
-
-function handleGlossaryClick(e) {
-    const item = e.target.closest(".terminology-item");
-    if (!item) return;
-
-    const index = item.dataset.index;
-    const content = item.querySelector(".term-content");
-    const icon = item.querySelector(".term-icon");
-
-    const isOpen = content.classList.contains("open");
-
-    if (isOpen) {
-        content.classList.remove("open");
-        icon.classList.remove("rotate");
-        savedStates[index] = false;
-    } else {
-        content.classList.add("open");
-        icon.classList.add("rotate");
-        savedStates[index] = true;
+            })
+            .join("");
     }
 
-    localStorage.setItem("glossaryStates", JSON.stringify(savedStates));
+    function handleGlossaryClick(e) {
+        const item = e.target.closest(".terminology-item");
+        if (!item) return;
+
+        const index = item.dataset.index;
+        const content = item.querySelector(".term-content");
+        const icon = item.querySelector(".term-icon");
+
+        const isOpen = content.classList.contains("open");
+
+        if (isOpen) {
+            content.classList.remove("open");
+            icon.classList.remove("rotate");
+            savedStates[index] = false;
+        } else {
+            content.classList.add("open");
+            icon.classList.add("rotate");
+            savedStates[index] = true;
+        }
+
+        localStorage.setItem("glossaryStates", JSON.stringify(savedStates));
+    }
+
+    glossaryContainer.addEventListener("click", handleGlossaryClick);
+
+    renderGlossary();
 }
-
-glossaryContainer.addEventListener("click", handleGlossaryClick);
-
-renderGlossary();
